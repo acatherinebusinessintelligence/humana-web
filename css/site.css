@@ -235,3 +235,9 @@ p { margin: 0 0 1em; }
 @media (max-width: 760px) {
   .h-capas { right: -20%; width: 70vw; }
 }
+
+/* Testimonio en tarjeta de persona */
+.h-testimonio { margin: 0; padding: 4px 0 0 20px; border-left: 3px solid var(--h-lavanda); }
+.h-testimonio blockquote { margin: 0; }
+.h-testimonio p { margin: 0; font-style: italic; color: var(--h-tinta); }
+.h-testimonio figcaption { margin-top: 6px; font-size: 14px; color: var(--h-piedra); }
