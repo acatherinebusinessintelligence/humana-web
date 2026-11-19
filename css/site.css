@@ -227,3 +227,4 @@ p { margin: 0 0 1em; }
   .h-respeto { padding-bottom: 140px; }
 }
 .h-persona__cabeza picture { flex: none; }
+.h-trampa { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }

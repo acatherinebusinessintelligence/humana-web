@@ -357,7 +357,8 @@
           <p>Cuéntanos tu contexto y te proponemos el curso, taller o acompañamiento que mejor se ajuste. La primera conversación es para entender, no para vender.</p>
           <p><span class="h-pendiente">[Pendiente: correo de contacto · WhatsApp]</span></p>
         </div>
-        <form class="h-cristal h-formulario" aria-describedby="nota-form" onsubmit="return false">
+        <form class="h-cristal h-formulario" action="/contacto" method="post" aria-describedby="nota-form">
+          <div class="h-trampa" aria-hidden="true"><label for="sitio_web">No llenes este campo</label><input id="sitio_web" name="sitio_web" type="text" tabindex="-1" autocomplete="off"></div>
           <div class="h-campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
           <div class="h-campo"><label for="org">Organización</label><input id="org" name="organizacion" type="text" autocomplete="organization"></div>
           <div class="h-campo"><label for="correo">Correo</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
@@ -372,11 +373,11 @@
           </div>
           <div class="h-campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="4"></textarea></div>
           <div class="h-check">
-            <input id="autorizo" name="autorizacion" type="checkbox" required>
+            <input id="autorizo" name="autorizacion" type="checkbox" value="si" required>
             <label for="autorizo">Autorizo a HUMANA a tratar mis datos para responder esta solicitud, según la <a href="privacidad.html">política de tratamiento de datos personales</a>.</label>
           </div>
-          <button class="h-btn" type="submit" disabled>Enviar mensaje</button>
-          <p class="h-nota" id="nota-form"><span class="h-pendiente">[Pendiente: conectar el formulario a un servicio de envío. Mientras tanto no envía datos.]</span></p>
+          <button class="h-btn" type="submit">Enviar mensaje</button>
+          <p class="h-nota" id="nota-form">Solo usamos estos datos para responderte. No los compartimos ni los usamos para entrenar modelos de IA.</p>
         </form>
       </div>
     </section>
