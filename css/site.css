@@ -256,10 +256,3 @@ p { margin: 0 0 1em; }
 .h-respeto__cierre { margin: 40px 0 0; font-weight: 600; font-size: 18px; color: var(--h-hueso); max-width: 760px; }
 .h-respeto .h-framework__firma { margin: 24px 0 0; padding: 0; }
 @media (max-width: 760px) { .h-respeto { padding-bottom: 40px; } }
-
-/* Franja de trayectoria (solo texto: sin logos de terceros) */
-.h-trayectoria { padding: 40px 24px 48px; border-top: 1px solid rgba(34, 26, 51, 0.08); }
-.h-trayectoria .h-eyebrow { color: var(--h-piedra); margin: 0 0 16px; }
-.h-nombres { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 28px; }
-.h-nombres li { font-weight: 700; font-size: 17px; color: var(--h-tinta); display: inline-flex; align-items: center; gap: 10px; }
-.h-nombres li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--h-arcilla); flex: none; }
