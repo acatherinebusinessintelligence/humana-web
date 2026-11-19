@@ -241,3 +241,18 @@ p { margin: 0 0 1em; }
 .h-testimonio blockquote { margin: 0; }
 .h-testimonio p { margin: 0; font-style: italic; color: var(--h-tinta); }
 .h-testimonio figcaption { margin-top: 6px; font-size: 14px; color: var(--h-piedra); }
+
+/* Framework Respeto: siete preguntas sobre Jacarandá */
+.h-respeto { margin-top: 24px; padding: clamp(32px, 5vw, 56px); }
+.h-respeto h3 { font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.02em; margin: 8px 0 0; color: var(--h-hueso); }
+.h-respeto__intro { color: var(--h-hueso); margin: -16px 0 40px; max-width: 760px; }
+.h-opcion {
+  display: inline-block; margin: 4px 4px 0 0; padding: 2px 12px; border-radius: var(--h-radio-pildora);
+  border: 1.5px solid var(--h-lavanda); font-size: 15px; font-weight: 700; white-space: nowrap;
+}
+.h-respeto .h-dimensiones dt { color: var(--h-hueso); }
+.h-respeto .h-dimensiones dd { color: var(--h-hueso); opacity: .92; }
+.h-respeto .h-letra { color: var(--h-lavanda); }
+.h-respeto__cierre { margin: 40px 0 0; font-weight: 700; font-size: 20px; color: var(--h-hueso); max-width: 760px; }
+.h-respeto .h-framework__firma { margin: 24px 0 0; padding: 0; }
+@media (max-width: 760px) { .h-respeto { padding-bottom: 40px; } }
