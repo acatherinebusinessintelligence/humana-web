@@ -253,7 +253,7 @@ p { margin: 0 0 1em; }
 .h-respeto .h-dimensiones dt { color: var(--h-hueso); }
 .h-respeto .h-dimensiones dd { color: var(--h-hueso); opacity: .92; }
 .h-respeto .h-letra { color: var(--h-lavanda); }
-.h-respeto__cierre { margin: 40px 0 0; font-weight: 700; font-size: 20px; color: var(--h-hueso); max-width: 760px; }
+.h-respeto__cierre { margin: 40px 0 0; font-weight: 600; font-size: 18px; color: var(--h-hueso); max-width: 760px; }
 .h-respeto .h-framework__firma { margin: 24px 0 0; padding: 0; }
 @media (max-width: 760px) { .h-respeto { padding-bottom: 40px; } }
 
