@@ -228,3 +228,10 @@ p { margin: 0 0 1em; }
 }
 .h-persona__cabeza picture { flex: none; }
 .h-trampa { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+
+/* Capas del hero: alineadas con el borde del contenedor (antes quedaban pegadas
+   y recortadas contra el borde derecho de la pantalla). */
+.h-capas { right: max(24px, calc((100vw - var(--h-ancho-max)) / 2)); width: min(40vw, 520px); }
+@media (max-width: 760px) {
+  .h-capas { right: -20%; width: 70vw; }
+}
