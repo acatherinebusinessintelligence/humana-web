@@ -161,3 +161,69 @@ p { margin: 0 0 1em; }
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
   overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
 }
+
+/* ---------- v2: contenido ampliado ---------- */
+.h-cuatro { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.h-tres { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.h-dos--espacio { margin-top: 24px; }
+.h-cuatro .h-card, .h-tres .h-card, .h-dos .h-card { display: flex; flex-direction: column; gap: 12px; }
+.h-cuatro h3, .h-tres h3, .h-dos h3 { margin: 0; }
+.h-cuatro p, .h-tres p, .h-dos p { margin: 0; font-size: 16px; }
+.h-card--respeto .h-paso { color: var(--h-hueso); }
+
+/* Framework Humano: seis dimensiones */
+.h-humano { padding: clamp(32px, 5vw, 56px); }
+.h-humano__cabeza { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; }
+.h-humano__punto { flex: none; width: 56px; height: 56px; }
+.h-humano h3 { font-size: clamp(24px, 2.6vw, 32px); letter-spacing: -0.02em; margin: 8px 0 0; }
+.h-dimensiones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 40px; margin: 0; }
+.h-dimensiones dt { font-weight: 700; color: var(--h-tinta); font-size: 18px; line-height: 1.3; }
+.h-dimensiones dd { margin: 8px 0 0; color: var(--h-ciruela); font-size: 16px; }
+.h-letra {
+  display: block; font-size: 44px; font-weight: 800; line-height: 1; letter-spacing: -0.03em;
+  color: var(--h-arcilla-profunda); margin-bottom: 12px;
+}
+.h-humano .h-framework__firma { margin: 40px 0 0; padding: 0; }
+.h-respeto { margin-top: 24px; min-height: 280px; }
+
+/* Servicios */
+.h-servicio .h-lista { margin-top: 8px; font-size: 16px; }
+.h-servicio .h-lista li { color: var(--h-tinta); }
+
+/* Love Audit AI */
+.h-destacada { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+.h-destacada > div { flex: 1 1 480px; }
+.h-destacada h3 { margin: 0 0 8px; }
+.h-destacada p { margin: 0; }
+
+/* Equipo */
+.h-foto { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; object-position: center 20%; }
+.h-credenciales { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; font-size: 16px; }
+.h-credenciales li { padding: 14px 16px; background: var(--h-hueso); border-radius: var(--h-radio-sm); }
+.h-credenciales strong { color: var(--h-jacaranda); }
+
+/* Contacto con formulario */
+.h-contacto__grilla { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; position: relative; z-index: 1; }
+.h-contacto .h-formulario { padding: clamp(28px, 4vw, 40px); display: grid; gap: 18px; max-width: none; }
+.h-campo { display: grid; gap: 6px; }
+.h-campo label { font-size: 15px; font-weight: 700; color: var(--h-tinta); }
+.h-campo input, .h-campo select, .h-campo textarea {
+  font: inherit; font-size: 16px; color: var(--h-tinta); background: var(--h-blanco);
+  border: 1.5px solid rgba(74, 63, 99, 0.35); border-radius: var(--h-radio-sm);
+  min-height: 48px; padding: 10px 14px;
+}
+.h-campo textarea { resize: vertical; }
+.h-check { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; }
+.h-check input { width: 22px; height: 22px; margin: 2px 0 0; flex: none; accent-color: var(--h-jacaranda); }
+.h-formulario .h-btn[disabled] { opacity: .55; cursor: not-allowed; }
+.h-formulario .h-nota { margin: 0; }
+
+@media (max-width: 1000px) {
+  .h-cuatro, .h-tres, .h-dimensiones { grid-template-columns: 1fr 1fr; }
+  .h-contacto__grilla { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .h-cuatro, .h-tres, .h-dimensiones { grid-template-columns: 1fr; }
+  .h-respeto { padding-bottom: 140px; }
+}
+.h-persona__cabeza picture { flex: none; }
