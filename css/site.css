@@ -256,3 +256,7 @@ p { margin: 0 0 1em; }
 .h-respeto__cierre { margin: 40px 0 0; font-weight: 600; font-size: 18px; color: var(--h-hueso); max-width: 760px; }
 .h-respeto .h-framework__firma { margin: 24px 0 0; padding: 0; }
 @media (max-width: 760px) { .h-respeto { padding-bottom: 40px; } }
+
+/* País bajo el nombre */
+.h-persona__pais { display: flex; align-items: center; gap: 6px; margin: 4px 0 0; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; color: var(--h-arcilla-profunda); }
+.h-persona__pais svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; flex: none; }
