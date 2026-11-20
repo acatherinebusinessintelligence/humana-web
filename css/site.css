@@ -260,3 +260,16 @@ p { margin: 0 0 1em; }
 /* País bajo el nombre */
 .h-persona__pais { display: flex; align-items: center; gap: 6px; margin: 4px 0 0; font-size: 14px; font-weight: 700; letter-spacing: 0.04em; color: var(--h-arcilla-profunda); }
 .h-persona__pais svg { width: 16px; height: 16px; stroke: currentColor; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+/* Alianzas */
+.h-aliada { display: grid; grid-template-columns: 160px 1fr; gap: 40px; align-items: start; padding: clamp(28px, 4vw, 48px); }
+.h-aliada__foto { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; }
+.h-aliada__texto { display: flex; flex-direction: column; gap: 16px; max-width: 820px; }
+.h-aliada__texto h3, .h-aliada__texto p { margin: 0; }
+.h-aliada__texto .h-persona__pais { margin-top: -10px; }
+.h-aliada__texto .h-persona__rol { margin-top: -10px; color: var(--h-piedra); font-size: 16px; }
+.h-aliada .h-credenciales li { background: var(--h-bruma); }
+@media (max-width: 760px) {
+  .h-aliada { grid-template-columns: 1fr; gap: 24px; }
+  .h-aliada__foto { width: 120px; height: 120px; }
+}
